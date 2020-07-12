@@ -1,0 +1,36 @@
+# process of reducing infected words to their word stem
+# eg - history and hostorical to histori
+# eg - finally , final , finalized to fina
+# eg - going, gone, goes to go
+# why we need stemming -
+# cause we just need stem words, going, gone, goes, in the end
+# meens the same thing and big words uses more space also.
+stemming uses -
+positive negative sentiment analysis
+gmail spam classsifier
+produces intermediate representation of the words which may not have any meaning
+
+Lemmetization
+It does the same thing but convert the words into meaningful
+words.
+eg - history , historical to history, instead of histori
+lemmatization uses -
+chatbots
+QnA applications
+
+Bag of words - (document matrix)
+lowercase the paragraph. using,  review.lower()
+convert a paragrah into sentences, using nltk.sent_tokenize(paragraph)
+or, sentences to words. using nltk.word_tokenize(paragraph)
+use Lemmetization to reduce the word and stopwords to remove unnecessay words.
+use map to get frequency of each word.
+now in a sentence write the words as fearture.
+Binary bag of words - 0 if words is not present in sentence
+                      1 if word is present
+Bag of words - words as feature with frequency of that words present
+
+disadvantage of BOW -
+cannot differentiate between the words of same frequency
+
+use tf idf (term frequency & inverse docement frequency)
+

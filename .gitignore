@@ -1,2 +1,3 @@
 .vscode
 dockerEnv
+__pycache__

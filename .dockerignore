@@ -1,0 +1,6 @@
+.vscode
+dockerEnv
+.git
+.gitignore
+dockerCommands.txt
+__pycache__

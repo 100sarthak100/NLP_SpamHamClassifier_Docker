@@ -1,0 +1,6 @@
+docker build -t nlp-python:v1 .
+
+docker ps 
+docker ps -a
+docker image ls
+docker run 'image'
